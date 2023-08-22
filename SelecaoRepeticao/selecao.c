@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+//declarando funções
 void imprimeMenu();
 void coord();
 void tipoTriangulo();
@@ -10,6 +11,7 @@ void medias();
 void somaImpares();
 void somaImpares2();
 
+//main
 int main(){
     int select =-1;
     while (select !=0){
@@ -47,6 +49,8 @@ int main(){
         }
     }
 }
+
+//funções
 void imprimeMenu(){
     printf("\nEscolha uma opcao:");
     printf("\n0 - Sair");
