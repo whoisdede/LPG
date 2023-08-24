@@ -174,10 +174,10 @@ void senoDeX(){
     scanf(" %f", &x);
     for(int i=1; i<=k; i++){
         inverto *= -1;
-        float a=0;
+        float a=x;
         int n =(2*i)+1;
         for( int j=1; j<n;j++){
-            a += x*x;
+            a *= x;
         }
         result += (inverto*(a))/(fat(n));
     }
@@ -195,12 +195,12 @@ void cosDeX(){
     scanf(" %f", &x);
     for(int i=1; i<=k; i++){
         inverto *= -1;
-        float a=0;
+        float a=x;
         int n =(2*i);
         for( int j=1; j<n;j++){
-            a += x*x;
+            a *= x;
         }
-        result += (inverto*(a))/(fat(n));
+        result += inverto*((a)/(fat(n)));
     }
     result += 1;
     printf("\n Aqui está o resultado: %f", result);
